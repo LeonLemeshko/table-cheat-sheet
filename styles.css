@@ -1,0 +1,160 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  margin: 0 5px;
+  background-color: #F0F8FF; /* AliceBlue */
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+/* Navigation Section */
+nav {
+  margin: 20px 0 40px 0;
+  border: 2px solid #5F9EA0; /* CadetBlue */
+  background-color: #B0C4DE; /* LightSteelBlue */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav li {
+  border: 1px solid #191970; /* MidnightBlue */
+  padding: 5px 10px;
+  background-color: #F8F8FF; /* GhostWhite */
+  color: #191970;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav a {
+  color: #191970;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Header */
+.pageHeader {
+  border: 2px solid #5F9EA0;
+  padding: 15px;
+  background-color: #B0C4DE;
+  text-align: center;
+}
+
+.pageHeader h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+  color: #191970;
+}
+
+.pageHeader p {
+  font-size: 1.1em;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Main Content */
+main {
+  border: 1px solid #5F9EA0;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #B0C4DE;
+  min-height: 450px;
+}
+
+/* About Section */
+.about {
+  border: 0.5px solid #708090; /* SlateGray */
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #F8F8FF;
+}
+
+.about h2 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: #191970;
+}
+
+/* Table Reference Section */
+.table-reference {
+  border: 0.5px solid #708090;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #F8F8FF;
+}
+
+.table-reference h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #191970;
+}
+
+.table-reference table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-reference th,
+.table-reference td {
+  border: 1px solid #666;
+  padding: 10px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Table Header */
+.table-reference th {
+  background-color: #708090;
+  color: white;
+  font-weight: bold;
+}
+
+/* Alternating Row Colors */
+.table-reference tbody tr:nth-child(even) {
+  background-color: #F5F5F5; /* WhiteSmoke */
+}
+
+.table-reference tbody tr:hover {
+  background-color: #E0FFFF; /* LightCyan */
+}
+
+/* Monospace Styling for Tag Column */
+.table-reference td:nth-child(2) {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #F8F8FF; /* GhostWhite */
+  color: #191970; /* MidnightBlue */
+  font-size: 0.95em;
+  box-shadow: inset 0 0 1px #ccc;
+  border-radius: 4px;
+}
+
+/* Footer */
+.contact {
+  border: 2px solid #191970;
+  background-color: #B0C4DE;
+  padding: 15px;
+  margin-bottom: 8px;
+  color: #191970;
+  min-height: 100px;
+}
+
+.contact p {
+  font-weight: lighter;
+  line-height: 1.6;
+}
