@@ -95,6 +95,215 @@
   </table>
 </section>
 
+<section class="css-reference">
+  <h2>Advanced CSS Reference</h2>
+  
+  <div class="css-category">
+    <h3>🔗 Combinators</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Selector</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Use Case</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>li + li</td>
+          <td>Adjacent sibling combinator. Selects li that directly follows another li.</td>
+          <td>.breadcrumb li + li</td>
+          <td>Add separators between breadcrumb items</td>
+        </tr>
+        <tr>
+          <td>li ~ li</td>
+          <td>General sibling combinator. Selects all li siblings after the first.</td>
+          <td>.menu li ~ li</td>
+          <td>Style all menu items except the first</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="css-category">
+    <h3>🎭 Pseudo-elements</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Selector</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Use Case</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>::before</td>
+          <td>Inserts content before the element</td>
+          <td>li + li::before { content: "/"; }</td>
+          <td>Add visual separators in breadcrumbs</td>
+        </tr>
+        <tr>
+          <td>::after</td>
+          <td>Inserts content after the element</td>
+          <td>p::after { content: "✓"; }</td>
+          <td>Add icons or markers after text</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="css-category">
+    <h3>🧱 Box Model & Layout</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Use Case</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>box-sizing</td>
+          <td>Controls how width/height are calculated</td>
+          <td>box-sizing: border-box;</td>
+          <td>Prevent layout overflow</td>
+        </tr>
+        <tr>
+          <td>display: grid</td>
+          <td>Enables CSS Grid layout</td>
+          <td>display: grid; grid-template-columns: 1fr 2fr;</td>
+          <td>Responsive layout control</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="css-category">
+    <h3>🎨 Visual Styling</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Use Case</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>filter</td>
+          <td>Applies visual effects</td>
+          <td>filter: blur(5px);</td>
+          <td>Stylize images or backgrounds</td>
+        </tr>
+        <tr>
+          <td>backdrop-filter</td>
+          <td>Applies effects behind an element</td>
+          <td>backdrop-filter: blur(10px);</td>
+          <td>Frosted glass UI effect</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="css-category">
+    <h3>🧩 Transitions & Animations</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Use Case</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>transition</td>
+          <td>Smooth property changes</td>
+          <td>transition: all 0.3s ease;</td>
+          <td>Hover effects</td>
+        </tr>
+        <tr>
+          <td>@keyframes</td>
+          <td>Defines animation steps</td>
+          <td>@keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }</td>
+          <td>Animate element appearance</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="css-category">
+    <h3>🎯 Advanced nth Selectors</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Selector</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Use Case</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>:nth-of-type(n)</td>
+          <td>Selects every nth element of its type</td>
+          <td>p:nth-of-type(2)</td>
+          <td>Style the second paragraph in each container</td>
+        </tr>
+        <tr>
+          <td>:nth-last-of-type(n)</td>
+          <td>Selects every nth element of its type, counting from the end</td>
+          <td>li:nth-last-of-type(2)</td>
+          <td>Style the second-to-last list item</td>
+        </tr>
+        <tr>
+          <td>:first-of-type</td>
+          <td>Selects the first element of its type</td>
+          <td>h2:first-of-type</td>
+          <td>Style only the first h2 in a section</td>
+        </tr>
+        <tr>
+          <td>:last-of-type</td>
+          <td>Selects the last element of its type</td>
+          <td>img:last-of-type</td>
+          <td>Add margin to the last image</td>
+        </tr>
+        <tr>
+          <td>:only-of-type</td>
+          <td>Selects element that is the only one of its type</td>
+          <td>blockquote:only-of-type</td>
+          <td>Special styling for standalone quotes</td>
+        </tr>
+        <tr>
+          <td>:nth-child(odd)</td>
+          <td>Selects odd-numbered child elements</td>
+          <td>tr:nth-child(odd)</td>
+          <td>Alternate row colors in tables</td>
+        </tr>
+        <tr>
+          <td>:nth-child(even)</td>
+          <td>Selects even-numbered child elements</td>
+          <td>div:nth-child(even)</td>
+          <td>Style every other card in a grid</td>
+        </tr>
+        <tr>
+          <td>:nth-child(3n+1)</td>
+          <td>Selects every 3rd element starting from 1st</td>
+          <td>li:nth-child(3n+1)</td>
+          <td>Create 3-column layouts with special first items</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</section>
+
     </main>
     <footer>
       <div class="contact" id="contact">

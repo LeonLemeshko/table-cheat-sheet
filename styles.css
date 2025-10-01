@@ -158,3 +158,75 @@ main {
   font-weight: lighter;
   line-height: 1.6;
 }
+
+.css-reference {
+  border: 0.5px solid #708090; /* Match table-reference styling */
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #F8F8FF; /* Match existing sections */
+}
+
+.css-reference h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #191970; /* Match your MidnightBlue theme */
+}
+
+.css-category {
+  margin-bottom: 2rem;
+}
+
+.css-category h3 {
+  color: #191970; /* Match your theme instead of #2c3e50 */
+  border-bottom: 2px solid #5F9EA0; /* Use your CadetBlue instead of #3498db */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2em;
+}
+
+.css-category table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.css-category th,
+.css-category td {
+  border: 1px solid #666;
+  padding: 10px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.css-category th {
+  background-color: #708090; /* Match your existing table headers */
+  color: white;
+  font-weight: bold;
+}
+
+.css-category tbody tr:nth-child(even) {
+  background-color: #F5F5F5; /* Match existing alternating rows */
+}
+
+.css-category tbody tr:hover {
+  background-color: #E0FFFF; /* Match existing hover effect */
+}
+
+/* Style the Example column with monospace */
+.css-category table th:nth-child(3) {
+  background-color: #9AACB5; /* Lighter shade of #708090 */
+  color: #aeff8f;
+  font-weight: 600;
+  font-size: 0.95em;
+  box-shadow: inset 0 0 1px #ccc;
+  border-radius: 4px;
+}
+
+.css-category table td:nth-child(3) {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #F8F8FF; /* Keep GhostWhite for data cells */
+  color: #191970;
+  font-size: 0.95em;
+  box-shadow: inset 0 0 1px #ccc;
+  border-radius: 4px;
+}
